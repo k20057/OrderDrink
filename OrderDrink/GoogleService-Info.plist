@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>611240869942-ededp72g5lo7kultivj00kgq9477f8er.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.611240869942-ededp72g5lo7kultivj00kgq9477f8er</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBfj9rOi1qe59R3u7k2JRncSuNgtHJlBLQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>611240869942</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.OrderDrink</string>
+	<key>PROJECT_ID</key>
+	<string>orderdrink-886f9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>orderdrink-886f9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:611240869942:ios:b27c5250468cff24a51897</string>
+	<key>DATABASE_URL</key>
+	<string>https://orderdrink-886f9.firebaseio.com</string>
+</dict>
+</plist>

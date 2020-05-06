@@ -3,20 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7868ABA23B9AAE200F70AC2 /* OrderDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7868AB923B9AAE200F70AC2 /* OrderDetailVC.swift */; };
+		A7868ABC23B9AB1500F70AC2 /* OrderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7868ABB23B9AB1500F70AC2 /* OrderListCell.swift */; };
+		A7868AC023B9F6F000F70AC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7868ABF23B9F6F000F70AC2 /* GoogleService-Info.plist */; };
+		A7868AC223BEEE2F00F70AC2 /* mapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7868AC123BEEE2F00F70AC2 /* mapVC.swift */; };
 		A7D1747323B6B5410062D94F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1747223B6B5410062D94F /* AppDelegate.swift */; };
 		A7D1747523B6B5410062D94F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1747423B6B5410062D94F /* SceneDelegate.swift */; };
-		A7D1747723B6B5410062D94F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1747623B6B5410062D94F /* ViewController.swift */; };
 		A7D1747A23B6B5410062D94F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D1747823B6B5410062D94F /* Main.storyboard */; };
 		A7D1747C23B6B5490062D94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D1747B23B6B5490062D94F /* Assets.xcassets */; };
 		A7D1747F23B6B5490062D94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D1747D23B6B5490062D94F /* LaunchScreen.storyboard */; };
-		A7D1748823B80ED90062D94F /* 迷克夏.txt in Resources */ = {isa = PBXBuildFile; fileRef = A7D1748623B80ED80062D94F /* 迷克夏.txt */; };
-		A7D1748923B80ED90062D94F /* 木衛二.txt in Resources */ = {isa = PBXBuildFile; fileRef = A7D1748723B80ED90062D94F /* 木衛二.txt */; };
 		A7D1748B23B811FE0062D94F /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1748A23B811FE0062D94F /* Drink.swift */; };
-		A7D1748D23B819A70062D94F /* DrinkOrderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1748C23B819A70062D94F /* DrinkOrderTVC.swift */; };
+		A7D1748D23B819A70062D94F /* OrderDrinkTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1748C23B819A70062D94F /* OrderDrinkTVC.swift */; };
+		A7D1749023B82E7B0062D94F /* OrderListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1748F23B82E7B0062D94F /* OrderListTVC.swift */; };
 		EB4E7218C1ADB81CA9464D55 /* Pods_OrderDrink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49614EAB5A609EE9E9E5F48A /* Pods_OrderDrink.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,18 +38,20 @@
 
 /* Begin PBXFileReference section */
 		49614EAB5A609EE9E9E5F48A /* Pods_OrderDrink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderDrink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7868AB923B9AAE200F70AC2 /* OrderDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailVC.swift; sourceTree = "<group>"; };
+		A7868ABB23B9AB1500F70AC2 /* OrderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListCell.swift; sourceTree = "<group>"; };
+		A7868ABF23B9F6F000F70AC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7868AC123BEEE2F00F70AC2 /* mapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapVC.swift; sourceTree = "<group>"; };
 		A7D1746F23B6B5410062D94F /* OrderDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D1747223B6B5410062D94F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7D1747423B6B5410062D94F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7D1747623B6B5410062D94F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A7D1747923B6B5410062D94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7D1747B23B6B5490062D94F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7D1747E23B6B5490062D94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7D1748023B6B5490062D94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7D1748623B80ED80062D94F /* 迷克夏.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "迷克夏.txt"; sourceTree = "<group>"; };
-		A7D1748723B80ED90062D94F /* 木衛二.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "木衛二.txt"; sourceTree = "<group>"; };
 		A7D1748A23B811FE0062D94F /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
-		A7D1748C23B819A70062D94F /* DrinkOrderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkOrderTVC.swift; sourceTree = "<group>"; };
+		A7D1748C23B819A70062D94F /* OrderDrinkTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDrinkTVC.swift; sourceTree = "<group>"; };
+		A7D1748F23B82E7B0062D94F /* OrderListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTVC.swift; sourceTree = "<group>"; };
 		AA69B697425AF99F66988EE0 /* Pods-OrderDrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderDrink.release.xcconfig"; path = "Target Support Files/Pods-OrderDrink/Pods-OrderDrink.release.xcconfig"; sourceTree = "<group>"; };
 		BFC048EC117D1F675A71036E /* Pods-OrderDrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderDrink.debug.xcconfig"; path = "Target Support Files/Pods-OrderDrink/Pods-OrderDrink.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,15 +99,17 @@
 			children = (
 				A7D1747223B6B5410062D94F /* AppDelegate.swift */,
 				A7D1747423B6B5410062D94F /* SceneDelegate.swift */,
-				A7D1747623B6B5410062D94F /* ViewController.swift */,
 				A7D1747823B6B5410062D94F /* Main.storyboard */,
 				A7D1747B23B6B5490062D94F /* Assets.xcassets */,
 				A7D1747D23B6B5490062D94F /* LaunchScreen.storyboard */,
 				A7D1748023B6B5490062D94F /* Info.plist */,
-				A7D1748723B80ED90062D94F /* 木衛二.txt */,
-				A7D1748623B80ED80062D94F /* 迷克夏.txt */,
 				A7D1748A23B811FE0062D94F /* Drink.swift */,
-				A7D1748C23B819A70062D94F /* DrinkOrderTVC.swift */,
+				A7D1748C23B819A70062D94F /* OrderDrinkTVC.swift */,
+				A7D1748F23B82E7B0062D94F /* OrderListTVC.swift */,
+				A7868AB923B9AAE200F70AC2 /* OrderDetailVC.swift */,
+				A7868ABB23B9AB1500F70AC2 /* OrderListCell.swift */,
+				A7868ABF23B9F6F000F70AC2 /* GoogleService-Info.plist */,
+				A7868AC123BEEE2F00F70AC2 /* mapVC.swift */,
 			);
 			path = OrderDrink;
 			sourceTree = "<group>";
@@ -114,7 +120,6 @@
 				BFC048EC117D1F675A71036E /* Pods-OrderDrink.debug.xcconfig */,
 				AA69B697425AF99F66988EE0 /* Pods-OrderDrink.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -179,10 +184,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7D1748923B80ED90062D94F /* 木衛二.txt in Resources */,
 				A7D1747F23B6B5490062D94F /* LaunchScreen.storyboard in Resources */,
+				A7868AC023B9F6F000F70AC2 /* GoogleService-Info.plist in Resources */,
 				A7D1747C23B6B5490062D94F /* Assets.xcassets in Resources */,
-				A7D1748823B80ED90062D94F /* 迷克夏.txt in Resources */,
 				A7D1747A23B6B5410062D94F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,10 +240,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7D1748D23B819A70062D94F /* DrinkOrderTVC.swift in Sources */,
-				A7D1747723B6B5410062D94F /* ViewController.swift in Sources */,
+				A7868ABC23B9AB1500F70AC2 /* OrderListCell.swift in Sources */,
+				A7D1749023B82E7B0062D94F /* OrderListTVC.swift in Sources */,
+				A7D1748D23B819A70062D94F /* OrderDrinkTVC.swift in Sources */,
 				A7D1747323B6B5410062D94F /* AppDelegate.swift in Sources */,
 				A7D1748B23B811FE0062D94F /* Drink.swift in Sources */,
+				A7868AC223BEEE2F00F70AC2 /* mapVC.swift in Sources */,
+				A7868ABA23B9AAE200F70AC2 /* OrderDetailVC.swift in Sources */,
 				A7D1747523B6B5410062D94F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

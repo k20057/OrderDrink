@@ -7,22 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--首頁-->
-        <scene sceneID="ecZ-5v-SOL">
-            <objects>
-                <viewController id="L0f-T4-rv2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FeG-ln-DeT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="ksT-oR-fht"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="首頁" id="3xq-Gd-uWb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lyl-PP-ftj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1952" y="808"/>
-        </scene>
         <!--訂購飲料-->
         <scene sceneID="RVp-ed-h44">
             <objects>
@@ -40,13 +24,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWa-bQ-hma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="116.51785714285714"/>
+            <point key="canvasLocation" x="1041" y="-541"/>
         </scene>
         <!--訂購飲料-->
         <scene sceneID="qnw-4d-NBe">
             <objects>
-                <tableViewController id="aVK-SV-Fov" customClass="DrinkOrderTVC" customModule="OrderDrink" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ECG-Lt-f0f">
+                <tableViewController storyboardIdentifier="orderdrinkTVC" id="aVK-SV-Fov" customClass="OrderDrinkTVC" customModule="OrderDrink" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ECG-Lt-f0f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -67,8 +51,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Osr-Jd-xhA">
-                                                    <rect key="frame" x="159" y="24" width="192" height="34"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjP-Bq-cEN">
+                                                    <rect key="frame" x="159" y="23" width="241" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -83,7 +67,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="訂購飲料:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEb-5V-Y58">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="飲料名稱:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEb-5V-Y58">
                                                     <rect key="frame" x="48" y="30" width="74" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -91,7 +75,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yHq-lQ-TES">
-                                                    <rect key="frame" x="159" y="24" width="192" height="34"/>
+                                                    <rect key="frame" x="159" y="24" width="242" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -117,11 +101,14 @@
                                                     <rect key="frame" x="156" y="25" width="218" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <segments>
-                                                        <segment title="正常"/>
-                                                        <segment title="少糖"/>
                                                         <segment title="半糖"/>
+                                                        <segment title="微糖"/>
+                                                        <segment title="少糖"/>
                                                         <segment title="無糖"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="segmentSweet:" destination="aVK-SV-Fov" eventType="valueChanged" id="NVI-Xy-ARI"/>
+                                                    </connections>
                                                 </segmentedControl>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -133,24 +120,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="飲料溫度:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rar-sL-CWY">
-                                                    <rect key="frame" x="48" y="30" width="74" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ecI-bH-EDP">
-                                                    <rect key="frame" x="156" y="25" width="222" height="32"/>
+                                                    <rect key="frame" x="159" y="30" width="211" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <segments>
                                                         <segment title="正常"/>
                                                         <segment title="少冰"/>
                                                         <segment title="微冰"/>
                                                         <segment title="去冰"/>
-                                                        <segment title="熱"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="segmentTmp:" destination="aVK-SV-Fov" eventType="valueChanged" id="BI6-hc-bg1"/>
+                                                    </connections>
                                                 </segmentedControl>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="飲料冰塊:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rar-sL-CWY">
+                                                    <rect key="frame" x="48" y="34" width="74" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -175,7 +164,17 @@
                                                         <segment title="大杯"/>
                                                         <segment title="中杯"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="segmentSize:" destination="aVK-SV-Fov" eventType="valueChanged" id="jRL-uA-Yi1"/>
+                                                    </connections>
                                                 </segmentedControl>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="中杯折５元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vt4-jz-ZFA">
+                                                    <rect key="frame" x="288" y="58" width="62" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -193,10 +192,20 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="o5q-Jj-sDF">
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="o5q-Jj-sDF">
                                                     <rect key="frame" x="197" y="24" width="94" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="lbQuantity:" destination="aVK-SV-Fov" eventType="valueChanged" id="4O2-yG-wgn"/>
+                                                    </connections>
                                                 </stepper>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETH-KT-iuQ">
+                                                    <rect key="frame" x="327" y="30" width="67" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -214,8 +223,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmU-yv-Gh4">
-                                                    <rect key="frame" x="169" y="30" width="179" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmU-yv-Gh4">
+                                                    <rect key="frame" x="148" y="11" width="226" height="58"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -238,8 +247,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPY-pc-5vy">
-                                                    <rect key="frame" x="167" y="11" width="212" height="58"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPY-pc-5vy">
+                                                    <rect key="frame" x="146" y="0.0" width="259" height="80"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -256,14 +265,32 @@
                             <outlet property="delegate" destination="aVK-SV-Fov" id="nme-SS-f9M"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="訂購飲料" id="rVT-ZF-s4f"/>
+                    <navigationItem key="navigationItem" title="訂購飲料" id="rVT-ZF-s4f">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="7Hw-D6-IIt">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IUE-s2-GIA">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="確認完成"/>
+                                <connections>
+                                    <action selector="btConfirm:" destination="aVK-SV-Fov" eventType="touchUpInside" id="6fc-6Y-JMV"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="orderName" destination="Osr-Jd-xhA" id="5ED-Gi-r7J"/>
+                        <outlet property="LbDetail" destination="pPY-pc-5vy" id="abR-bl-nyB"/>
+                        <outlet property="LbTotal" destination="gmU-yv-Gh4" id="Rv0-OI-fuB"/>
+                        <outlet property="lbQuantity" destination="ETH-KT-iuQ" id="NAO-Y8-IHe"/>
+                        <outlet property="segmentSize" destination="sEE-ZP-ens" id="1g1-mr-B5L"/>
+                        <outlet property="segmentSweet" destination="1zg-S7-0Z3" id="fhm-Gk-mK2"/>
+                        <outlet property="segmentTmp" destination="ecI-bH-EDP" id="D98-2v-8WX"/>
+                        <outlet property="tfDrink" destination="yHq-lQ-TES" id="bWz-kn-AbZ"/>
+                        <outlet property="tfName" destination="mjP-Bq-cEN" id="vDw-NK-BcG"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcM-sf-p57" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1949.2753623188407" y="116.51785714285714"/>
+            <point key="canvasLocation" x="2011.594202898551" y="-541.07142857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yN1-M5-P4m">
@@ -271,6 +298,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VlR-3T-7t2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MZh-Gf-TGe">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -278,17 +306,18 @@
                     <connections>
                         <segue destination="qbg-Rz-Yxu" kind="relationship" relationship="viewControllers" id="M7b-aa-vQI"/>
                         <segue destination="iOu-aW-ugs" kind="relationship" relationship="viewControllers" id="23Q-4H-6rY"/>
+                        <segue destination="sFD-0z-Kg0" kind="relationship" relationship="viewControllers" id="dGD-Xw-h6F"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iy-yt-qut" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+            <point key="canvasLocation" x="106" y="157"/>
         </scene>
-        <!--首頁-->
+        <!--訂單列表-->
         <scene sceneID="404-E2-VGa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iOu-aW-ugs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首頁" id="Skr-5A-oJU"/>
+                    <tabBarItem key="tabBarItem" title="訂單列表" id="Skr-5A-oJU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BRr-gE-kH9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -296,12 +325,198 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="L0f-T4-rv2" kind="relationship" relationship="rootViewController" id="xvw-kA-7jd"/>
+                        <segue destination="Vbu-m3-gKP" kind="relationship" relationship="rootViewController" id="miV-vq-xAD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPG-lH-a7r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042" y="808"/>
+            <point key="canvasLocation" x="1041" y="158"/>
+        </scene>
+        <!--訂單列表-->
+        <scene sceneID="FR2-V0-DoQ">
+            <objects>
+                <tableViewController storyboardIdentifier="orderlistTVC" id="Vbu-m3-gKP" customClass="OrderListTVC" customModule="OrderDrink" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="opF-Ta-sBl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" id="oxS-t7-ruF">
+                            <rect key="frame" x="0.0" y="169" width="414" height="340"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderlistcell" rowHeight="113" id="LW6-z5-crz" customClass="OrderListCell" customModule="OrderDrink" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="113"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LW6-z5-crz" id="gZc-hK-TPn">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="113"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="冰塊:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7M6-uc-ZIi">
+                                            <rect key="frame" x="258" y="11" width="156" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="飲料名稱:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rd6-KR-sK8">
+                                            <rect key="frame" x="13" y="36" width="237" height="47"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數量:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kik-kE-wf1">
+                                            <rect key="frame" x="13" y="85" width="140" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="甜度:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyp-7I-IJc">
+                                            <rect key="frame" x="258" y="48" width="101" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="訂購者:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kec-Uy-77n">
+                                            <rect key="frame" x="13" y="5" width="224" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="總金額:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIq-g2-5oj">
+                                            <rect key="frame" x="258" y="83" width="156" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="orderDrink" destination="Rd6-KR-sK8" id="9Q3-1d-5rR"/>
+                                    <outlet property="orderName" destination="Kec-Uy-77n" id="EiF-lO-XhV"/>
+                                    <outlet property="orderQuantity" destination="Kik-kE-wf1" id="usl-QO-OqX"/>
+                                    <outlet property="orderSugar" destination="oyp-7I-IJc" id="oO1-qg-ITj"/>
+                                    <outlet property="orderTemp" destination="7M6-uc-ZIi" id="sTv-SK-170"/>
+                                    <outlet property="orderTotal" destination="HIq-g2-5oj" id="z7v-8a-RFG"/>
+                                    <segue destination="g9m-3Q-Ovk" kind="show" identifier="orderDetail" id="sX0-7m-JN1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Vbu-m3-gKP" id="5ba-tS-Az7"/>
+                            <outlet property="delegate" destination="Vbu-m3-gKP" id="JiT-dR-bYr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="訂單列表" id="LsQ-Ft-o0c"/>
+                    <connections>
+                        <outlet property="loading" destination="oxS-t7-ruF" id="ZCY-Rf-8bf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygW-0M-UVE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2011.594202898551" y="156.69642857142856"/>
+        </scene>
+        <!--店家資訊-->
+        <scene sceneID="aKL-3T-wmZ">
+            <objects>
+                <viewController id="vZn-jh-BbV" customClass="mapVC" customModule="OrderDrink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VuB-AM-nFQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JLb-cO-fbT">
+                                <rect key="frame" x="37" y="216" width="334" height="553"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vZn-jh-BbV" id="nN6-rZ-Pgv"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTR-Mm-yjj">
+                                <rect key="frame" x="166" y="169" width="77" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="回到起始點"/>
+                                <connections>
+                                    <action selector="backToPosition:" destination="vZn-jh-BbV" eventType="touchUpInside" id="kiz-9L-BHu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="v6f-te-4o5" firstAttribute="bottom" secondItem="JLb-cO-fbT" secondAttribute="bottom" constant="44" id="8BV-CV-M2j"/>
+                            <constraint firstItem="JLb-cO-fbT" firstAttribute="top" secondItem="v6f-te-4o5" secondAttribute="top" constant="128" id="9xf-pT-3n0"/>
+                            <constraint firstItem="v6f-te-4o5" firstAttribute="trailing" secondItem="JLb-cO-fbT" secondAttribute="trailing" constant="43" id="M7T-hc-1Co"/>
+                            <constraint firstItem="JLb-cO-fbT" firstAttribute="leading" secondItem="v6f-te-4o5" secondAttribute="leading" constant="37" id="xiq-sR-5tv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v6f-te-4o5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="店家資訊" id="sxj-HM-gFq"/>
+                    <connections>
+                        <outlet property="mapView" destination="JLb-cO-fbT" id="1ZG-bP-hMe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bM-xE-wr0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2011.594202898551" y="857.8125"/>
+        </scene>
+        <!--訂單明細-->
+        <scene sceneID="Vy8-JP-1jk">
+            <objects>
+                <viewController id="g9m-3Q-Ovk" customClass="OrderDetailVC" customModule="OrderDrink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J05-QI-llc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXe-zx-awm">
+                                <rect key="frame" x="78" y="190" width="268" height="353"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwO-YQ-orP">
+                                <rect key="frame" x="84" y="544" width="259" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2hd-sL-qwG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="訂單明細" id="8ji-GQ-54m"/>
+                    <connections>
+                        <outlet property="label" destination="OwO-YQ-orP" id="vQ0-yp-y7b"/>
+                        <outlet property="result" destination="hXe-zx-awm" id="5AK-JP-6BV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qn6-Gx-asx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2902.898550724638" y="156.69642857142856"/>
+        </scene>
+        <!--店家資訊-->
+        <scene sceneID="xpJ-BF-GA4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sFD-0z-Kg0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="店家資訊" id="oSE-PG-qzz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eHd-5J-BrD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vZn-jh-BbV" kind="relationship" relationship="rootViewController" id="b9O-bg-Z6n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3H0-C7-gfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="859"/>
         </scene>
     </scenes>
 </document>

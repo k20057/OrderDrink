@@ -8,7 +8,7 @@
 
 import Foundation
 //讀取木衛二與迷克夏的txt
-struct DrinkList{
+struct DrinksList{
     var name: String
     var price: Int
 }
@@ -16,11 +16,24 @@ struct DrinkList{
 struct Drink:Codable{
     var name: String?
     var drink: String?
-    var price: String?
-    var quantity: String?
-    var percentSugar: String?
-    var temp: String
-    var size: String
+    var price: Int?
+    var quantity: Int?
+    var sugar: String?
+    var temp: String?
+    var size: String?
+    var total: Int?
+    init?(dic: [String: Any]){
+        name = dic["name"] as? String
+        drink = dic["drink"] as? String
+        price = dic["price"] as? Int
+        quantity = dic["quantity"] as? Int
+        sugar = dic["sugar"] as? String
+        temp = dic["temp"] as? String
+        size = dic["size"] as? String
+        total = dic["total"] as? Int
+    }
+    
+    
 }
 
 struct DrinkData:Codable{
